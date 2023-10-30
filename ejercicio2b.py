@@ -6,11 +6,21 @@
 
 # Programa principal
 def main():
-    nombre="Mariano";
-    edad=0;
+    nombre=str(input("Dime tu nombre: "))
+    edad=int(input("Dime tu edad: "))
 
     # Utilice la función definida
     # Estructura alternativa Si (condidición con función) entonces --> sino ...
+
+    esMayorEdad(edad)
+
+
+
+def esMayorEdad(e):
+    if e>=18:
+        print("Ya puedes conducir")
+    else:
+        print("Todavía no puedes conducir")
 
 if __name__== "__main__" :
    main()
