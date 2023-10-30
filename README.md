@@ -2,7 +2,7 @@
 # Puesta en Producción Segura: Fundamentos de programación.
 ## Ejercicios de Programación con Python
 ### Profesor José Gaspar Sánchez García.
-Alumno:
+Alumno: Manuel Felipe Sánchez Córdoba
 
 #### Elementos básicos:
 * [Ejercicio 1](ejercicio1.py). Mostrar en pantalla *Hola mundo*.
