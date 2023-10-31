@@ -1,4 +1,4 @@
-"""Pide la edad y el nombre por teclado. En caso de ser mayor de 18 años indica que ya puede conducir."""
+"""Pide la edad y el nombre por teclado. En caso de ser mayor de 18 años indica que ya puede conducirr."""
 
 def main():
     nombre=input("Introduzca su nombre: ")
