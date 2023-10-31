@@ -5,31 +5,34 @@ import random
 
 # Función que determina si un numero es par.
 
-def esPar(numero) :
-    return True # --> Implemente código de la función <--
-
+def esPar(numero):
+    if numero % 2 == 0:
+        return True # --> Implemente código de la función <--
+    return False
 def esImpar(numero) :
-    return False # --> Implemente código de la función <--
+    if numero % 2 != 0:
+        return True
+    return False
 
 def generarPares(valores, inicio) :
     pares=[]
     numero=inicio
-    if esImpar(inicio) :
-        numero=inicio+1
     # --> Complete código de la función <--
-
+    while len(pares) < valores:
+        if esPar(numero):
+            pares.append(numero)
+        numero+=1
     return pares
 
-def generarImpares(valores, inicio) :
-    impares=[]
-    numero=inicio
-    if esPar(inicio) :
-        numero=inicio+1
-
+def generarImpares(valores, inicio):
+    impares = []
+    numero = inicio
     # --> Complete código de la función <--
-
+    while len(impares) < valores:
+        if esImpar(numero):
+            impares.append(numero)
+        numero += 1
     return impares
-
 
 # Programa principal
 def main():
@@ -41,7 +44,7 @@ def main():
     x=generarPares(m,i)
     y=generarImpares(m,i)
     print("Impares: ",y)
-    print("Pares: ",x)    
+    print("Pares: ",x)
 
 if __name__== "__main__" :
    main()
