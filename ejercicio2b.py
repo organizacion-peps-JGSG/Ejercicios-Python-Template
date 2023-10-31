@@ -13,10 +13,8 @@ def main():
         print(f'{nombre}, eres menor de edad y no puedes conducir')
     else:
         print(f'{nombre}, enorabuena, ya puedes conducir. ')
-        M 
+        
     
-    
-
     # Utilice la función definida
     # Estructura alternativa Si (condidición con función) entonces --> sino ...
 
