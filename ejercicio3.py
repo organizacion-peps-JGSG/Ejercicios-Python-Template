@@ -11,16 +11,34 @@ __Author__="Manuel Felipe Sánchez Córoba"
 - Utilice la estructura de control if-elif-else.
 - Impltemente una función obtenerCalificacion(nota)."""
 
-# Implemente función obtenerCalificacion
-def obtenerCalificaion(nota) :
-    calificacion="Incorrecta"
-   # Implemente aquí ... Si (condición) entonces ... sino ... si (condición) entonces ... sino ...
-    return calificacion
+# coding=utf-8
+__author__ = "Manuel Felipe Sánchez Córoba"
 
+def obtenerCalificacion(nota):
+    if nota >= 0 and nota < 3:
+        return "Muy deficiente"
+    elif nota >= 3 and nota < 5:
+        return "Insuficiente"
+    elif nota >= 5 and nota < 6:
+        return "Suficiente"
+    elif nota >= 6 and nota < 7:
+        return "Bien"
+    elif nota >= 7 and nota < 9:
+        return "Notable"
+    elif nota >= 9 and nota <= 10:
+        return "Sobresaliente"
+    else:
+        return "Nota fuera de rango"
 
-# Programa principal
 def main():
-    n=int(input("Introduzca la nota: "));
-    print('Calificación: '+obtenerCalificaion(n));
+    n = float(input("Introduzca la nota: "))
+    if 0 <= n <= 10:
+        calificacion = obtenerCalificacion(n)
+        print(f'Calificación: {calificacion}')
+    else:
+        print("La nota debe estar en el rango de 0 a 10.")
+
+7
+
 if __name__== "__main__" :
    main()

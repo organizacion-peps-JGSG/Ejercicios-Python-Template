@@ -8,6 +8,7 @@ def main():
         print(f'{nombre}, eres menor de edad no puedes conducir')
     else:
         print(f'{nombre}, tu edad te permite conducir, felicidades')
+        
 
     # Comprobamos si es mayor de edad - Estructura condicional if - else
     # Si edad mayor o igual a dieciocho --> Usted es nayor de edad
