@@ -1,5 +1,5 @@
 # coding=utf-8
-__Author__="José Gaspar Sánchez García"
+__Author__="Manuel Felipe Sánchez Córoba"
 
 """Pide una nota (número). Muestra la calificación según la nota:
     0-3: Muy deficiente.
@@ -16,6 +16,7 @@ def obtenerCalificaion(nota) :
     calificacion="Incorrecta"
    # Implemente aquí ... Si (condición) entonces ... sino ... si (condición) entonces ... sino ...
     return calificacion
+
 
 # Programa principal
 def main():
