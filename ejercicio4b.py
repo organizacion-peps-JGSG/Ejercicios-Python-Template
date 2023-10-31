@@ -74,9 +74,9 @@ def main():
     if ganadas1 == ganadas2 :
         print("HAN EMPATADO")
     elif ganadas1 > ganadas2 :
-        print("GANA ",nombre1," (",ganadas1,")")
+        print("GANA {0} y ganadas ({1})".format(nombre1,ganadas1))
     else :
-        print("GANA ",nombre2," (",ganadas2,")")
+        print("GANA {0} y ganadas ({1})".format(nombre2,ganadas2))
 
 
 if __name__== "__main__" :

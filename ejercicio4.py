@@ -19,11 +19,14 @@ import random
 # 2: Gana Jugador 2.
 
 def quienGana(jugada1, jugada2) :
-    if jugada1 == jugada2:
+    if jugada1 == jugada2 :
         return 0
-    elif jugada1 == "piedra" and jugada2 == "tijera":
+    elif jugada1 == "piedra" and jugada2 == "tijera" :
         return 1
-    # --> Complete su código <--
+    elif jugada1 == "tijera" and jugada2 == "papel" :
+        return 1
+    elif jugada1 == "papel" and jugada2 == "piedra" :
+        return 1
     else :
         return 2
 
@@ -56,7 +59,7 @@ def main():
         elif ganador == 2 :
             print("Gana "+nombre2)
             ganadas2=ganadas2+1
-        else :
+        else:
             print("Error.")
         
         numeroTirada=numeroTirada-1
