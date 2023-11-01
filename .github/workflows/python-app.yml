@@ -1,17 +1,21 @@
-name: Ejecutar test de python
+name: Ejecutar pruebas de Python
 
-on: push 
+on: [push] # Ejecutar el flujo de trabajo cuando se haga un push
 
 jobs:
-  unit-testing:
-    runs-on: ubuntu-latest 
-    
+  build:
+    runs-on: ubuntu-latest # El sistema operativo que se usará
+
     steps:
-    - name : Checkout code
-      uses : actions/checkout@v2
-      
-    - name : Install Packages 
-      run : pip install pytest
-      
-    - name : Run tests 
-      run : pytest test.py
+    - name: Configurar el entorno de Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.12 # Cambia '3.x' por la versión de Python que necesites
+
+    - name: Instalar dependencias
+      run: pip install -r requirements.txt
+      working-directory: ./ruta/a/tu/directorio/de/proyecto
+
+    - name: Ejecutar pruebas
+      run: pytest
+      working-directory: ./test
