@@ -17,5 +17,4 @@ jobs:
 
     - name: Ejecutar pruebas
       run: pytest
-      working-directory: tests
       
