@@ -12,10 +12,6 @@ jobs:
       with:
         python-version: 3.12 # Cambia '3.x' por la versión de Python que necesites
 
-    - name: Instalar dependencias
-      run: pip install -r requirements.txt
-      working-directory: ./ruta/a/tu/directorio/de/proyecto
-
     - name: Ejecutar pruebas
       run: pytest
       working-directory: ./test
