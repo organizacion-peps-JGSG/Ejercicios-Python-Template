@@ -3,17 +3,25 @@ name: Ejecutar pruebas de Python
 on:
   push:
     branches:
-      - main  # Reemplaza 'main' con el nombre de tu rama principal
+      - main
 
 jobs:
   test:
-    runs-on: ubuntu-latest # El sistema operativo que se usará
+    runs-on: ubuntu-latest
 
     steps:
+    - name: Set up Node.js 16
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16'
+        
+    - name: Checkout code
+      uses: actions/checkout@v2
+
     - name: Configurar el entorno de Python
       uses: actions/setup-python@v2
       with:
-        python-version: 3.12 # Cambia '3.x' por la versión de Python que necesites
+        python-version: 3.12
 
     - name: Instalar pytest
       run: pip install pytest
@@ -30,7 +38,6 @@ jobs:
       run: ls -lah      
 
     - name: Ejecutar pruebas
-      working-directory: ..  # Ruta al directorio raíz de tu proyecto
       run: pytest ./tests/
       
       
