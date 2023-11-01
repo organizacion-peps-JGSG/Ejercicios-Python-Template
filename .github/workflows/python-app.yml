@@ -1,9 +1,12 @@
 name: Ejecutar pruebas de Python
 
-on: [push] # Ejecutar el flujo de trabajo cuando se haga un push
+on:
+  push:
+    branches:
+      - main  # Reemplaza 'main' con el nombre de tu rama principal
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest # El sistema operativo que se usará
 
     steps:
@@ -14,6 +17,10 @@ jobs:
 
     - name: Instalar pytest
       run: pip install pytest
+      
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
 
     - name: Ejecutar pruebas
       run:  pytest ./tests/
