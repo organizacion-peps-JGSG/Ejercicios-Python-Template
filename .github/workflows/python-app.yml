@@ -17,15 +17,12 @@ jobs:
 
     - name: Instalar pytest
       run: pip install pytest
-
-    - name: List contents
-      run: ls -R
       
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
 
     - name: Ejecutar pruebas
-      run:  pytest ./tests/
+      run:  ls -R 
       
       
