@@ -30,7 +30,7 @@ jobs:
       
 
     - name: Ejecutar pruebas
-      working-directory: ./Ejercicios-Python-Template  # Ruta al directorio raíz de tu proyecto
+      working-directory: ..  # Ruta al directorio raíz de tu proyecto
       run: pytest ./tests/
       
       
