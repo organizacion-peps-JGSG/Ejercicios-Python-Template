@@ -13,9 +13,22 @@ __Author__="José Gaspar Sánchez García"
 
 # Implemente función obtenerCalificacion
 def obtenerCalificaion(nota) :
-    calificacion="Incorrecta"
    # Implemente aquí ... Si (condición) entonces ... sino ... si (condición) entonces ... sino ...
-    return calificacion
+    if(0 <= nota < 3):
+        cualification = 'Muy deficiente'
+    elif(3 <= nota < 5):
+        cualification = 'Insuficiente'
+    elif(5 <= nota < 6):
+        cualification = 'Suficiente'
+    elif(6 <= nota < 7):
+        cualification = 'Bien'
+    elif(7 <= nota < 9):
+        cualification = 'Notable'
+    elif(9 <= nota <= 10):
+        cualification = 'Sobresaliente'
+    else:
+        cualification = 'Incorrecta'
+    return cualification
 
 # Programa principal
 def main():
