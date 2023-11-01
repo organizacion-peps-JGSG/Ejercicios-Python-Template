@@ -27,9 +27,10 @@ jobs:
     - name: Cambiasdirectorio del proyecto
       run: ls -lah
 
-
+      
 
     - name: Ejecutar pruebas
-      run:  python -m pytest --import-mode=append tests/
+      working-directory: ./Ejercicios-Python-Template  # Ruta al directorio raíz de tu proyecto
+      run: pytest ./tests/
       
       
