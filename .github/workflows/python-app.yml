@@ -22,6 +22,13 @@ jobs:
       run: |
         python -m pip install --upgrade pip
 
+    - name: Cambiar al directorio del proyecto
+      run: cd ..
+    - name: Cambiasdirectorio del proyecto
+      run: la -lah
+
+
+
     - name: Ejecutar pruebas
       run:  python -m pytest --import-mode=append tests/
       
