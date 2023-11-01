@@ -23,6 +23,6 @@ jobs:
         python -m pip install --upgrade pip
 
     - name: Ejecutar pruebas
-      run:  ls -R 
+      run:  python -m pytest --import-mode=append tests/
       
       
