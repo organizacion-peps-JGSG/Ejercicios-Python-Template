@@ -25,7 +25,7 @@ jobs:
     - name: Cambiar al directorio del proyecto
       run: cd ..
     - name: Cambiasdirectorio del proyecto
-      run: la -lah
+      run: ls -lah
 
 
 
