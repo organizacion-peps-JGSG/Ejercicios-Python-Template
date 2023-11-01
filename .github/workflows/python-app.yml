@@ -26,7 +26,8 @@ jobs:
       working-directory: ..  # Ruta al directorio raíz de tu proyecto
       run: ls -lah
 
-      
+    - name: Cambiasdirectorio del proyecto
+      run: ls -lah      
 
     - name: Ejecutar pruebas
       working-directory: ..  # Ruta al directorio raíz de tu proyecto
