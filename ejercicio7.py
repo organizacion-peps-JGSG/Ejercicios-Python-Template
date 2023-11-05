@@ -22,6 +22,11 @@ def fibonacci(n) :
 
         # --> Implemente el código del Bucle <--
         
+        for i in range(2,n):
+            numero_next = vector[i -1] + vector[i -2]
+            vector.append(numero_next)
+        return vector
+        
     elif n==1 :
         vector[0]=1
 

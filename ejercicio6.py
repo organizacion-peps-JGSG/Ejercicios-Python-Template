@@ -5,7 +5,13 @@ __Author__="José Gaspar Sánchez García"
 # Función que determina si un numero es primo.
 
 def esPrimo(numero) :
+    if numero <= 1:
+        return False
     contador = 0
+    
+    for i in range(1, numero +1):
+        if numero % i == 0:
+            contador +=1
 
     if numero==1 :
         return True
