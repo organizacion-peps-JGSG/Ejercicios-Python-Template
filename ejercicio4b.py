@@ -47,7 +47,7 @@ def main():
         j1 = random.choice(["piedra", "papel", "tijera"])
         j2 = random.choice(["piedra", "papel", "tijera"])
         
-    
+        #Pruebas 
         # print(nombre1+" ha sacado "+j1+".")
         # print(nombre2+" ha sacado "+j2+".")
         # Implemente los comentarios anteriores empleando print("".format())
