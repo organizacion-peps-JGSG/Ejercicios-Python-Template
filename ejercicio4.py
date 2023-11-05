@@ -1,5 +1,5 @@
 # coding=utf-8
-__Author__="José Gaspar Sánchez García"
+__Author__="Manuel Felipe Sánchez Córdoba"
 
 """Escriba un programa que simule el juego **Piedra, papel, tijera** para dos jugadores. Las reglas del juego son las siguientes: 
     Simultáneamente, los dos jugadores muestran una mano en tres posibles posiciones:
@@ -38,35 +38,36 @@ def main():
     ganadas1=0
     ganadas2=0
 
-    while numeroTirada > 0 :
-        print("Tirada nº "+numeroTirada+":")
+    for tirada in range(numeroTirada, 0, -1):
+        print("Tirada nº", tirada)
         j1 = random.choice(["piedra", "papel", "tijera"])
-        j2 = "piedera" # Implemente tirada aleatoria para el jugador 2.
-        
-        print(nombre1+" ha sacado "+j1+".")
-        print(nombre2+" ha sacado "+j2+".")
-        
-        ganador=quienGana(j1,j2)
-        
-        if ganador == 0 :
+        j2 = random.choice(["piedra", "papel", "tijera"])
+
+        print(nombre1, "ha sacado", j1 + ".")
+        print(nombre2, "ha sacado", j2 + ".")
+
+        ganador = quienGana(j1, j2)
+
+        if ganador == 0:
             print("Han empatado.")
-        elif ganador == 1 :
-            print("Gana "+nombre1)
-            ganadas1=ganadas1+1
-        elif ganador == 2 :
-            print("Gana "+nombre2)
-            ganadas2=ganadas2+1
-        else :
+        elif ganador == 1:
+            print("Gana", nombre1)
+            ganadas1 += 1
+        elif ganador == 2:
+            print("Gana", nombre2)
+            ganadas2 += 1
+        else:
             print("Error.")
-        
-        numeroTirada=numeroTirada-1
 
     # Resultado final de todas las tiradas
     if ganadas1 == ganadas2 :
         print("HAN EMPATADO")
    # --> Complete código <--
-    else :
-        print("GANA "+nombre2)
+    elif ganadas1 > ganadas2:
+        print("Gana", nombre1)
+    else:
+        print("Gana", nombre2)
+    
 
 
 if __name__== "__main__" :

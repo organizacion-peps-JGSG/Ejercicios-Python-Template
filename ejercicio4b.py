@@ -47,9 +47,13 @@ def main():
         j1 = random.choice(["piedra", "papel", "tijera"])
         j2 = random.choice(["piedra", "papel", "tijera"])
         
+    
         # print(nombre1+" ha sacado "+j1+".")
         # print(nombre2+" ha sacado "+j2+".")
         # Implemente los comentarios anteriores empleando print("".format())
+        
+        print("{0} ha sacado {1}.".format(nombre1, j1))
+        print("{0} ha sacado {1}.".format(nombre2, j2))
        
         
         ganador=quienGana(j1,j2)
@@ -74,9 +78,11 @@ def main():
     if ganadas1 == ganadas2 :
         print("HAN EMPATADO")
     elif ganadas1 > ganadas2 :
-        print("GANA ",nombre1," (",ganadas1,")")
+        print(f"GANA {nombre1} ({ganadas1})")
+
     else :
-        print("GANA ",nombre2," (",ganadas2,")")
+        print(f"GANA {nombre2} ({ganadas2})")
+
 
 
 if __name__== "__main__" :
