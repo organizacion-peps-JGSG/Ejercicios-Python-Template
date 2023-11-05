@@ -11,8 +11,10 @@ def main():
 
     if edad >=18:
         print("Usted es mayor de edad")
+        return True
     else:
         print("Todavía eres menor de edad")
+        return False
 
 
 

@@ -32,7 +32,7 @@ def fibonacci(n) :
     elif n==1 :
         vector[0]=1
 
-    return vector; # Retorno de la función
+    return vector # Retorno de la función
 
 # Programa principal
 def main():

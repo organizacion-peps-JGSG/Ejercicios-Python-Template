@@ -19,8 +19,10 @@ def main():
 def esMayorEdad(e):
     if e>=18:
         print("Ya puedes conducir")
+        return True
     else:
         print("Todavía no puedes conducir")
+        return False
 
 if __name__== "__main__" :
    main()
