@@ -1,14 +1,7 @@
 # coding=utf-8
 __Author__="Manuel Felipe Sánchez Córdoba"
 
-"""Escriba un programa que simule el juego **Piedra, papel, tijera** para dos jugadores. Las reglas del juego son las siguientes: 
-    Simultáneamente, los dos jugadores muestran una mano en tres posibles posiciones:
-    - **Piedra:** se muestra el puño cerrado.
-    - **Papel:** se muestra la palma de la mano.
-    - **Tijera:** se muestra la palma de la mano con los dedos separados en dos grupos.
-    - El jugador que ha sacado **Piedra** gana al jugador que ha sacado *Tijera*.
-    - El jugador que ha sacado **Tijera** gana al jugador que ha sacado *Papel*.
-    - El jugador que ha sacado **Papel** gana al jugador que ha sacado *Piedra*."""
+
 
 
 import random
