@@ -35,7 +35,7 @@ def main():
     n = float(input("Introduzca la nota: "))
     if 0 <= n <= 10:
         calificacion = obtenerCalificacion(n)
-        print(f'Calificación: {calificacion}')
+        print(f"La nota que has sacado es:  {calificacion}")
     else:
         print("La nota debe estar en el rango de 0 a 10.")
 
