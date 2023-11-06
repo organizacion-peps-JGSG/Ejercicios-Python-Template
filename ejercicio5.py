@@ -38,7 +38,7 @@ def generarImpares(valores, inicio) :
         impares.append(numero)
         numero += 2
     
-     return impares
+    return impares
     # --> Complete código de la función <--
 
    
