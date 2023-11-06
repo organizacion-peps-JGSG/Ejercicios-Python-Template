@@ -1,5 +1,5 @@
 # coding=utf-8
-#Pide la edad y el nombre por teclado. En caso de ser mayor de 18 años indica que ya puede conducir.
+#Pide la edad y el nombre por teclado. En caso de ser mayor de 18 años indica que ya puede conducir..
 
 # Implemente función esMayorEdad(e)
 def esMayorEdad(edad):
