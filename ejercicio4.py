@@ -23,7 +23,10 @@ def quienGana(jugada1, jugada2) :
         return 0
     elif jugada1 == "piedra" and jugada2 == "tijera" :
         return 1
-    # --> Complete su código <--
+    elif jugada1 == "tijera" and jugada2 == "papel" :
+        return 1
+    elif jugada1 == "papel" and jugada2 == "piedra" :
+        return 1
     else :
         return 2
 
@@ -39,9 +42,10 @@ def main():
     ganadas2=0
 
     while numeroTirada > 0 :
-        print("Tirada nº "+numeroTirada+":")
+        print("Tirada nº "+str(numeroTirada)+":")
         j1 = random.choice(["piedra", "papel", "tijera"])
-        j2 = "piedera" # Implemente tirada aleatoria para el jugador 2.
+        j2 = random.choice(["piedra", "papel", "tijera"])
+        ''' "piedera" # Implemente tirada aleatoria para el jugador 2. '''
         
         print(nombre1+" ha sacado "+j1+".")
         print(nombre2+" ha sacado "+j2+".")
@@ -64,9 +68,10 @@ def main():
     # Resultado final de todas las tiradas
     if ganadas1 == ganadas2 :
         print("HAN EMPATADO")
-   # --> Complete código <--
+    elif ganadas1 > ganadas2:
+        print("Ha ganado la partida el jugador "+nombre1)
     else :
-        print("GANA "+nombre2)
+        print("Ha ganado la partida el jugador "+nombre2)
 
 
 if __name__== "__main__" :

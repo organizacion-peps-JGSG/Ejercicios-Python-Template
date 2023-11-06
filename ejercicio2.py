@@ -8,5 +8,18 @@ def main():
     # Si edad mayor o igual a dieciocho --> Usted es nayor de edad
     # Sino --> Todavía eres menor de edad
 
+    mayoriaDeEdad = 18
+    edad = int(edad)
+
+    if(edad > mayoriaDeEdad):
+        print(f'Enhorabuena {nombre}, eres mayor de edad')
+    else:
+        print(f'Lo sentimos {nombre}, eres menor de edad')
+
+
+
+
+
+
 if __name__== "__main__" :
     main()
