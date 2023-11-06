@@ -15,6 +15,7 @@ __Author__="Manuel Felipe Sánchez Córoba"
 __author__ = "Manuel Felipe Sánchez Córoba"
 
 def obtenerCalificacion(nota):
+    calificacion = "Incorrecta"
     if nota >= 0 and nota < 3:
         return "Muy deficiente"
     elif nota >= 3 and nota < 5:
@@ -27,19 +28,14 @@ def obtenerCalificacion(nota):
         return "Notable"
     elif nota >= 9 and nota <= 10:
         return "Sobresaliente"
-    else:
-        return "Nota fuera de rango"-1
+    
+    return calificacion
 
 
 def main():
     n = float(input("Introduzca la nota: "))
-    if 0 <= n <= 10:
-        calificacion = obtenerCalificacion(n)
-        print(f"La nota que has sacado es:  {calificacion}")
-    else:
-        print("La nota debe estar en el rango de 0 a 10.")
-
-7
+    print("calificacion: " +obtenerCalificacion)
+    
 
 if __name__== "__main__" :
    main()
