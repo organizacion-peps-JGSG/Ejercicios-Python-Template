@@ -1,22 +1,18 @@
 
-#Pide la edad y el nombre por teclado. En caso de ser mayor de 18 años indica que ya puede conducir.
-
-# Implemente función esMayorEdad(e)
-
+# Implementa la función esMayorEdad
+def esMayorEdad(edad):
+    return edad >= 18
 
 # Programa principal
 def main():
-    nombre=input(' ¿Como te llamas? ')
-    edad=int(input(f'{nombre}, que edad tienes? '))
+    nombre = input('¿Cómo te llamas? ')
+    edad = int(input(f'{nombre}, ¿qué edad tienes? '))
     
-    if edad <18:
-        print(f'{nombre}, eres menor de edad y no puedes conducir')
+    if esMayorEdad(edad):
+        print(f'{nombre}, ¡enhorabuena! Ya puedes conducir.')
     else:
-        print(f'{nombre}, enorabuena, ya puedes conducir. ')
-        
-    
-    # Utilice la función definida
-    # Estructura alternativa Si (condidición con función) entonces --> sino ...
+        print(f'{nombre}, eres menor de edad y no puedes conducir.')
 
-if __name__== "__main__" :
-   main()
+if __name__ == "__main__":
+    main()
+
