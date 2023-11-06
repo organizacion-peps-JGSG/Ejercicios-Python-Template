@@ -28,7 +28,7 @@ def obtenerCalificaion(nota):
     else:
         return "Incorrecta"
 
-   # Implemente aquí ... Si (condición) entonces ... sino ... si (condición) entonces ... sino ...
+   # Implemente aquí ... Si (condición) entonces ... sino ... si (condición) entonces ... sino ....
 
 # Programa principal
 def main():
