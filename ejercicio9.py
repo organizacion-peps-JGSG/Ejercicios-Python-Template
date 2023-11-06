@@ -54,6 +54,7 @@ def menuApp() :
                 else:
                     print("La division {0} / {1} = {2}.".format(d1,d2,resultado))   
             elif opcion == 0: 
+                print("Muchas gracias por usar nuestra calculadora !!!!!")
                 break;
             else: 
                 print("Error, opcion incorrecta")
