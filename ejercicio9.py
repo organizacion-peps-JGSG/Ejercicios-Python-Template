@@ -62,19 +62,12 @@ def menuApp() :
             continuar = input("¿Desea realizar otra operacion ?")
             if continuar.lower() != "si":
                 break             
-            
-        
         except ValueError as error:
             print(error)
         except ZeroDivisionError:
-            print("Error division por cero")
-        
+            print("Error division por cero")   
         if opcion !=0:
-            print("Error, las Opciones ofrecidas van desde 1 hasta 4")
-        
-        
-           
-       
+            print("Error, las Opciones ofrecidas van desde 1 hasta 4")      
 # Programa principal
 def main():
     menuApp()
