@@ -28,7 +28,8 @@ def obtenerCalificacion(nota):
     elif nota >= 9 and nota <= 10:
         return "Sobresaliente"
     else:
-        return "Nota fuera de rango"
+        return "Nota fuera de rango"-1
+
 
 def main():
     n = float(input("Introduzca la nota: "))
