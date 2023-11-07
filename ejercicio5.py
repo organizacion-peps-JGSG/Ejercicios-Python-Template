@@ -28,18 +28,19 @@ def generarPares(valores, inicio) :
 
     
 
-def generarImpares(valores, inicio) :
-    impares=[]
-    numero=inicio
-    if esPar(inicio) :
-        numero=inicio+1
+def generarImpares(valores, inicio):
+    impares = []
+    numero = inicio
+    
+    if esPar(inicio):
+        numero = inicio + 1
 
-    for a in range(valores):
+    for _ in range(valores):
         impares.append(numero)
         numero += 2
     
     return impares
-    # --> Complete código de la función <--
+
 
    
 
