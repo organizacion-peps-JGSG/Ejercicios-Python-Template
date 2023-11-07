@@ -13,17 +13,17 @@ __Author__="Marouane Saidi Rahim"
 
 # Implemente función obtenerCalificacion
 def obtenerCalificaion(nota):
-    if nota >= 0 and nota <= 3:
+    if nota >= 0 and nota < 3:
         return "Muy deficiente"
-    elif nota > 3 and nota <= 5:
+    elif nota >= 3 and nota < 5:
         return "Insuficiente"
-    elif nota > 5 and nota <= 6:
+    elif nota >= 5 and nota < 6:
         return "Suficiente"
-    elif nota > 6 and nota <= 7:
+    elif nota >= 6 and nota < 7:
         return "Bien"
-    elif nota > 7 and nota <= 9:
+    elif nota >= 7 and nota < 9:
         return "Notable"
-    elif nota > 9 and nota <= 10:
+    elif nota >= 9 and nota <= 10:
         return "Sobresaliente"
     else:
         return "Incorrecta"
@@ -32,7 +32,7 @@ def obtenerCalificaion(nota):
 
 # Programa principal
 def main():
-    n=int(input("Introduzca la nota: "));
-    print('Calificación: '+obtenerCalificaion(n));
+    n=10
+    print('Calificación: '+obtenerCalificaion(n))
 if __name__== "__main__" :
    main()

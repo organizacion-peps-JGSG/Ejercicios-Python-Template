@@ -11,8 +11,8 @@ def esMayorEdad(edad):
 
 # Programa principal
 def main():
-    nombre=input("Introduzca su nombre: ")
-    edad=int(input(f"Introduzca su edad {nombre}: "))
+    nombre="Marouane"
+    edad=21
 
     # Utilice la función definida
     if esMayorEdad(edad):

@@ -1,34 +1,46 @@
 # coding=utf-8
-__Author__="José Gaspar Sánchez García"
+__Author__="Marouane Saidi Rahim"
 
 import random
 
 # Función que determina si un numero es par.
-
 def esPar(numero) :
-    return True # --> Implemente código de la función <--
+    if numero % 2 == 0:
+        return True # --> Implemente código de la función <--
+    else:
+        return False
 
 def esImpar(numero) :
-    return False # --> Implemente código de la función <--
+    if numero % 2 == 0:
+        return False # --> Implemente código de la función <--
+    else:
+        return True
 
 def generarPares(valores, inicio) :
     pares=[]
     numero=inicio
-    if esImpar(inicio) :
+    if esImpar(inicio):
         numero=inicio+1
+    while valores > 0:
+        pares=pares+[numero]
+        numero += 2
+        valores -= 1
+    return pares
     # --> Complete código de la función <--
 
-    return pares
+    
 
 def generarImpares(valores, inicio) :
     impares=[]
     numero=inicio
-    if esPar(inicio) :
+    if esPar(inicio):
         numero=inicio+1
-
-    # --> Complete código de la función <--
-
+    while valores > 0:
+        impares=impares+[numero]
+        numero +=2
+        valores -=1
     return impares
+    # --> Complete código de la función <--
 
 
 # Programa principal
