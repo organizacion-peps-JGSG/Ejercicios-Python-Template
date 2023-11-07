@@ -1,5 +1,5 @@
 # coding=utf-8
-__Author__="José Gaspar Sánchez García"
+__Author__="Manuel Felipe Sánchez Córdoba"
 
 import random
 
@@ -31,15 +31,14 @@ def generarPares(valores, inicio) :
 def generarImpares(valores, inicio):
     impares = []
     numero = inicio
-    
-    if esPar(inicio):
-        numero = inicio + 1
 
-    for _ in range(valores):
-        impares.append(numero)
-        numero += 2
-    
+    while len(impares) < valores:
+        if not esPar(numero):
+            impares.append(numero)
+        numero += 1
+
     return impares
+
 
 
    
