@@ -6,7 +6,7 @@ __Author__="José Gaspar Sánchez García"
 
 def esPrimo(numero):
     if numero <= 1:
-        return False
+        return True
 
     for i in range(2, int(numero ** 0.5) + 1):
         if numero % i == 0:
