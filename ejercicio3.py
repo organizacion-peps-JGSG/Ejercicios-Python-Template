@@ -14,7 +14,10 @@ __Author__="Manuel Felipe Sánchez Córoba"
 # coding=utf-8
 __author__ = "Manuel Felipe Sánchez Córoba"
 
-def obtenerCalificacion(nota):
+# coding=utf-8
+__author__ = "Manuel Felipe Sánchez Córoba"
+
+def obtenerCalificaion(nota):
     calificacion = "Incorrecta"
     if nota >= 0 and nota < 3:
         return "Muy deficiente"
@@ -28,17 +31,13 @@ def obtenerCalificacion(nota):
         return "Notable"
     elif nota >= 9 and nota <= 10:
         return "Sobresaliente"
-    elif nota == -1 and nota == 11:
-        return "Nota incorrecta"
-        
-    
-    return calificacion
-
+    elif nota < 0 or nota > 10:
+        return  "Incorrecta"
 
 def main():
     n = float(input("Introduzca la nota: "))
-    print("calificacion: " +obtenerCalificacion)
-    
+    calificacion = obtenerCalificacion(n)
+    print("Calificación: " + calificacion)
 
-if __name__== "__main__" :
-   main()
+if __name__ == "__main__":
+    main()

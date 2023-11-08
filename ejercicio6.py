@@ -4,31 +4,23 @@ __Author__="José Gaspar Sánchez García"
 
 # Función que determina si un numero es primo.
 
-def esPrimo(numero) :
+def esPrimo(numero):
     if numero <= 1:
         return False
-    contador = 0
-    
-    for i in range(1, numero +1):
+
+    for i in range(2, int(numero ** 0.5) + 1):
         if numero % i == 0:
-            contador +=1
+            return False
 
-    if numero==1 :
-        return True
+    return True
 
-    # --> Implemente el código del Bucle <--
-    
-    # Si tiene solo dos divisores el número es primo     
-    if contador == 2 :
-        return True
-    else :
-        return False
+
 
 # Programa principal
 def main():
     print("ES PRIMO")
-    n=int(input("Introduzca un numero: "))
-    print("{0} es primo --> {1}.".format(n,esPrimo(n)))
+    n = int(input("Introduzca un número: "))
+    print("{0} es primo --> {1}.".format(n, esPrimo(n)))
 
-if __name__== "__main__" :
-   main()
+if __name__ == "__main__":
+    main()
