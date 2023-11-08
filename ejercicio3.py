@@ -28,6 +28,9 @@ def obtenerCalificacion(nota):
         return "Notable"
     elif nota >= 9 and nota <= 10:
         return "Sobresaliente"
+    elif nota == -1 and nota == 11:
+        return "Nota incorrecta"
+        
     
     return calificacion
 
