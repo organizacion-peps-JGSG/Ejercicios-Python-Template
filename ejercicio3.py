@@ -36,7 +36,7 @@ def obtenerCalificaion(nota):
 
 def main():
     n = float(input("Introduzca la nota: "))
-    calificacion = obtenerCalificacion(n)
+    calificacion = obtenerCalificaion(n)
     print("Calificación: " + calificacion)
 
 if __name__ == "__main__":
