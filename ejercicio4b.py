@@ -1,5 +1,5 @@
 # coding=utf-8
-__Author__="José Gaspar Sánchez García"
+__Author__="Manuel Felipe Sánchez Córdoba"
 
 """Escriba un programa que simule el juego **Piedra, papel, tijera** para dos jugadores. Las reglas del juego son las siguientes: 
     Simultáneamente, los dos jugadores muestran una mano en tres posibles posiciones:

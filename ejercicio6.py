@@ -1,5 +1,5 @@
 # coding=utf-8
-__Author__="José Gaspar Sánchez García"
+__Author__="Manuel Felipe Sánchez Córdoba"
 
 
 # Función que determina si un numero es primo.
