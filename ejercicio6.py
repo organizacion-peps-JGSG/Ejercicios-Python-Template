@@ -1,14 +1,20 @@
 # coding=utf-8
-__Author__="José Gaspar Sánchez García"
+__Author__="Marouane Saidi Rahim"
 
 
 # Función que determina si un numero es primo.
 
 def esPrimo(numero) :
-    contador = 0
-
-    if numero==1 :
-        return True
+    primo = []
+    contador = 2
+    while contador < numero:
+        if numero % contador == 0:
+            return False
+        contador += 1
+    
+    return True
+    
+    
 
     # --> Implemente el código del Bucle <--
     
