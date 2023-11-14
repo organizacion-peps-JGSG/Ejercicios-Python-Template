@@ -1,13 +1,13 @@
 # coding=utf-8
-__Author__="José Gaspar Sánchez García"
-
+__Author__="Marouane Saidi Rahim"
 
 # Función que determina si un numero es primo.
+
 
 def fibonacci(n) :
     vector = []
 
-    if n<1 :
+    if n < 1 :
         return vector
     elif n==1 :
         vector.append(1)
@@ -21,7 +21,10 @@ def fibonacci(n) :
         vector.append(1)
 
         # --> Implemente el código del Bucle <--
-        
+        for i in range(2,n):
+            numero_next = vector[i -1] + vector[i -2]
+            vector.append(numero_next)
+        return vector
     elif n==1 :
         vector[0]=1
 
