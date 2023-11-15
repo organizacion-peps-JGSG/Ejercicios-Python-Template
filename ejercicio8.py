@@ -21,10 +21,18 @@ def fibonacci(n) :
         vector.append(1)
         # Creamos aquí el bucle WHILE
         # --> Implemente el código del Bucle
+
+        counter = 2
+        while counter < n:
+            nuevo_num = vector[counter - 1] + vector[counter - 2]
+            vector.append(nuevo_num)
+            counter+=1
+
+
     elif n==1 :
         vector[0]=1
 
-    return vector; # Retorno de la función
+    return vector # Retorno de la función
 
 # Programa principal
 def main():

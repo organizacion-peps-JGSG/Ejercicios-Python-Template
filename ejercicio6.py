@@ -11,11 +11,18 @@ def esPrimo(numero) :
         return True
 
     # --> Implemente el código del Bucle <--
+
+    for i in range(1,numero+1):
+        if numero % i == 0:
+            contador+=1
+
+
+
     
     # Si tiene solo dos divisores el número es primo     
     if contador == 2 :
         return True
-    else :
+    else:
         return False
 
 # Programa principal
